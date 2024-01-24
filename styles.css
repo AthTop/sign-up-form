@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    flex: 1;
+    position: relative;
+}
+
+.sidebar>img {
+    height: 100vh;
+}
+
+.logo > p {
+    position: absolute;
+    width: 100%;
+    margin-top: 50%;
+    background: rgba(0, 0, 0, 0.438);
+    font-family: "Norse";
+    font-size: 6em;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.logo > p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("odin-lined.png") no-repeat;
+    background-size: 1em;
+    height: 2em;
+    width: 1em;
+    right: 65%;
+    top: 10%;
+}
+
+.credit > p {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.credit > p > a {
+    color: white;
+}
+
+.content-wrapper {
+    flex: 2;
+}
+
+
