@@ -138,6 +138,11 @@ input:focus {
     box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+#register_btn:active {
+    box-shadow: inset 4px 2px 2px black;
+}
+
+
 .footer {
     padding: 30px;
     flex: 2;
