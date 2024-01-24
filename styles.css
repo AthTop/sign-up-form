@@ -61,6 +61,89 @@ body {
 
 .content-wrapper {
     flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
+.heading {
+    padding: 80px 120px 20px 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background: #eeeeee;
+    flex: 1;
+}
 
+.form {
+    padding: 30px;
+    flex: 1;
+}
+
+form > legend {
+    font-size: 1.5em;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: left;
+}
+
+.flex-wrapper > div > label,
+.flex-wrapper > div > input {
+    display: block;
+}
+
+label {
+    color: #303;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+input:focus {
+    appearance: none;
+    border: 1px solid blue;
+    box-shadow: 4px 2px 2px lightblue;
+    outline: none;
+}
+
+.error:invalid {
+    border: 1px solid red;
+    position: relative;
+}
+
+.error:invalid + span::before {
+    content: "*Password is required";
+    color: red;
+    position: absolute;
+    font-size: 0.8em;
+}
+
+#register_btn {
+    background-color: #596D48;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    padding: 30px;
+    flex: 2;
+    background: #eeeeee;
+}
+
+.footer > p > a {
+    color: #596D48;
+    text-decoration: none;
+}

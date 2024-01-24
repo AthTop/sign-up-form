@@ -17,16 +17,39 @@
         <img src="bg-img.jpg" alt="An image of a flower">
     </div>
     <div class="content-wrapper">
-        <div>
+        <div class="heading">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
-        <div>
-            <form action="">
-
+        <div class="form">
+            <form action="sign-up" method="post" id="register">
+                <legend>Let's do this</legend>
+                <div class="flex-wrapper">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="password">Password</label>
+                        <input class="error" type="password" name="user_password" id="password" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input class="error" type="password" name="confirm_user_password" id="confirm_password" required>
+                        <span></span>
+                    </div>
+                </div>
             </form>
         </div>
-        <div></div>
+        <div class="footer">
+            <button type="submit" form="register" id="register_btn">Create Account</button>
+            <p>Already have an account? <a href="/log-in">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>
